@@ -1,6 +1,6 @@
 # Machine Learning Notebooks
 
-A collection of Jupyter notebooks covering data preprocessing and feature engineering techniques using the Titanic and House Prices datasets.
+A collection of Jupyter notebooks covering data preprocessing, feature engineering and outlier removal techniques using the Titanic, House Prices and Placement datasets.
 
 ---
 
@@ -18,11 +18,17 @@ ML/
 │   ├── automatically-select-imputer.ipynb
 │   ├── knn-imputer.ipynb
 │   ├── missing-indicator.ipynb
-│   └── random-sample-imputation.ipynb
+│   ├── iterative-imputer.ipynb
+│   ├── random-sample-imputation.ipynb
+│   └── 50_Startups.csv
 │
 ├── feature_engineering/
 │   ├── binarization.ipynb
 │   └── binning.ipynb
+│
+├── outlier_removal/
+│   ├── outlier-removal-zscore.ipynb
+│   └── placement.csv
 │
 ├── transformers/
 │   ├── Transformers.ipynb
@@ -60,6 +66,7 @@ Advanced imputation techniques that preserve data distribution.
 | `missing-indicator.ipynb` | Add True/False columns to flag which values were originally missing |
 | `random-sample-imputation.ipynb` | Fill missing values with randomly sampled real values to preserve distribution |
 | `knn-imputer.ipynb` | Use K-Nearest Neighbours to fill missing values based on similar rows |
+| `iterative-imputer.ipynb` | Use regression to predict missing values iteratively until convergence |
 
 ---
 
@@ -70,6 +77,15 @@ Techniques to transform raw features into more useful representations.
 |---|---|
 | `binarization.ipynb` | Convert numerical values into binary (0 or 1) |
 | `binning.ipynb` | Group continuous values into discrete buckets/bins |
+
+---
+
+### Outlier Removal (`outlier_removal/`)
+Techniques to detect and handle outliers in datasets.
+
+| Notebook | Description |
+|---|---|
+| `outlier-removal-zscore.ipynb` | Detect and remove outliers using Z-Score — covers trimming and capping |
 
 ---
 
@@ -98,6 +114,8 @@ Combining multiple preprocessing steps into one clean workflow.
 |---|---|
 | `train.csv` | Titanic dataset — predict passenger survival |
 | `house-train.csv` | House Prices dataset — predict sale price of houses |
+| `missing_indicator/50_Startups.csv` | 50 Startups dataset — used for iterative imputer demo |
+| `outlier_removal/placement.csv` | Placement dataset — used for outlier removal demo |
 
 ---
 
