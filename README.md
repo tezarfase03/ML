@@ -37,6 +37,9 @@ ML/
 ├── pipelines/
 │   └── Pipe.ipynb
 │
+├── linear_regression/
+│   └── linera_regression.ipynb
+│
 ├── train.csv
 └── house-train.csv
 ```
@@ -105,6 +108,15 @@ Combining multiple preprocessing steps into one clean workflow.
 | Notebook | Description |
 |---|---|
 | `Pipe.ipynb` | Build sklearn pipelines with ColumnTransformer and GridSearchCV |
+
+---
+
+### Linear Regression (`linear_regression/`)
+Custom implementation of linear regression algorithm from scratch.
+
+| Notebook | Description |
+|---|---|
+| `linera_regression.ipynb` | Custom LinearRegression class using gradient descent — predicts placement exam marks based on CGPA |
 
 ---
 
